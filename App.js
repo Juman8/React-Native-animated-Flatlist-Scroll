@@ -13,11 +13,7 @@ export default class AnimatedHeader extends React.Component {
     this.state = {
       animatedValue: new Animated.Value(0),
     }
-    this.onHide = this.onHide.bind(this)
-  }
-
-  onHide =() =>{
-    alert('hide')
+    this.onHide = ()=>{alert('hide')}
   }
 
   _renderItem = ({ item }) => {
